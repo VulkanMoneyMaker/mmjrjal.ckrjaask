@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
                     if (!url.contains(mRedirectKey)) {
                         if (url.contains("aff1b1b01.vulkanplat1num") && queryValueFirst != null) {
-                            view.loadUrl(url + "&" + queryValueFirst);
+                            view.loadUrl(url + "&pid=" + queryValueFirst);
                         } else {
                             view.loadUrl(url);
                         }
