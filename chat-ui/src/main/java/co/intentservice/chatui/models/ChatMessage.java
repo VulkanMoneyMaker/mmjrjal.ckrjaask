@@ -2,8 +2,6 @@ package co.intentservice.chatui.models;
 
 import android.text.format.DateFormat;
 
-import java.util.concurrent.TimeUnit;
-
 public class ChatMessage {
     private String message;
     private String userName;

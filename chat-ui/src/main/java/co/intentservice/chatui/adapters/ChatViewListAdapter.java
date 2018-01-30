@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
 
-import co.intentservice.chatui.R;
 import co.intentservice.chatui.models.ChatMessage;
 import co.intentservice.chatui.viewholders.MessageViewHolder;
 import co.intentservice.chatui.views.ViewBuilder;

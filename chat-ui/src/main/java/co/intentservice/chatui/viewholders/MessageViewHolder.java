@@ -2,9 +2,7 @@ package co.intentservice.chatui.viewholders;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.TextView;
 
 import co.intentservice.chatui.R;
 import co.intentservice.chatui.views.MessageView;

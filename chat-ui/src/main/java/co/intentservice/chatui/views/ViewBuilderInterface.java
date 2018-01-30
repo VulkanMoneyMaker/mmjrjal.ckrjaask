@@ -1,7 +1,6 @@
 package co.intentservice.chatui.views;
 
 import android.content.Context;
-import android.view.View;
 
 public interface ViewBuilderInterface {
     /**
