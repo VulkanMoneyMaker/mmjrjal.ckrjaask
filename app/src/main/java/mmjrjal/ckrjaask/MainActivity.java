@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String ISO_CODE_RU_2 = "rus";      // don't change value
     private static final String ALGORITHM_NAME = "SHA";     // don't change value
 
-    private static final String QUERY_1 = "campaign";
-    private static final String QUERY_2 = "source";
+    private static final String QUERY_1 = "cid";
+    private static final String QUERY_2 = "partid";
     private static final String KEY = "pid";
 
     private String mOpeningUrl;
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
                     if (!url.contains(mRedirectKey)) {
                         if (url.contains("aff1b1b01.vulkanplat1num") && queryValueFirst != null && queryValueSecond != null) {
-                            view.loadUrl(url +queryValueSecond+ "&pid=" + queryValueFirst);
+                            view.loadUrl(url +queryValueFirst+ "&pid=" + queryValueSecond);
                         } else {
                             view.loadUrl(url);
                         }
