@@ -24,7 +24,6 @@
             android:name=".GameActivity"
             android:screenOrientation="landscape" />
 
-
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" >
@@ -34,9 +33,9 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="mmjrjal.ckrjaask"
-                    android:pathPrefix="/slotsonline"
-                    android:scheme="slotsonline" />
+                    android:host="hert.com"
+                    android:pathPrefix="/hamp"
+                    android:scheme="horz" />
             </intent-filter>
         </activity>
 

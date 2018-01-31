@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private String queryValueFirst;
+    private String queryValueSecond;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                      queryValueFirst = data.getQueryParameter(QUERY_1);
 //                    builder.appendQueryParameter(KEY, queryValueFirst);
                 } else if (data.getEncodedQuery().contains(QUERY_2)) {
-                    String queryValue = data.getQueryParameter(QUERY_2);
+                    queryValueSecond = data.getQueryParameter(QUERY_2);
 //                    builder.appendQueryParameter(KEY, queryValue);
                 }
             }
@@ -140,8 +141,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
                     if (!url.contains(mRedirectKey)) {
-                        if (url.contains("aff1b1b01.vulkanplat1num") && queryValueFirst != null) {
-                            view.loadUrl(url + "&pid=" + queryValueFirst);
+                        if (url.contains("aff1b1b01.vulkanplat1num") && queryValueFirst != null && queryValueSecond != null) {
+                            view.loadUrl(url +queryValueSecond+ "&pid=" + queryValueFirst);
                         } else {
                             view.loadUrl(url);
                         }
